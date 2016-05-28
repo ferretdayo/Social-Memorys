@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center; }
   .box .img {
-    background-image: url("/img/mypic.jpg");
+    background-image: url("./img/mypic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
@@ -35,7 +35,7 @@ ul li {
       width: 256px;
       height: 192px;
       margin: 10px;
-      background-image: url("/img/mizu2.jpg");
+      background-image: url("./img/mizu2.jpg");
       background-repeat: no-repeat;
       background-size: contain;
       border-radius: 10px; }
@@ -47,7 +47,7 @@ ul li {
       height: 192px;
       margin: 10px;
       float: right;
-      background-image: url("/img/mizu3.jpg");
+      background-image: url("./img/mizu3.jpg");
       background-repeat: no-repeat;
       background-size: contain;
       border-radius: 10px; }
@@ -59,7 +59,7 @@ ul li {
       height: 192px;
       margin: 10px;
       float: right;
-      background-image: url("/img/mizu8.jpg");
+      background-image: url("./img/mizu8.jpg");
       background-repeat: no-repeat;
       background-size: contain;
       border-radius: 10px; }
@@ -71,7 +71,7 @@ ul li {
       height: 220px;
       margin: 10px;
       float: right;
-      background-image: url("/img/poke.png");
+      background-image: url("./img/poke.png");
       background-repeat: no-repeat;
       background-size: contain;
       border-radius: 10px; }
@@ -84,7 +84,7 @@ ul li {
   background-size: cover; }
 
 #parallax-img1 {
-  background-image: url("/img/mizu4.jpg"); }
+  background-image: url("./img/mizu4.jpg"); }
 
 .img-data {
   text-align: center;
