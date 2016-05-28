@@ -7,7 +7,7 @@ body {
 
 .box {
   width: auto;
-  height: 400px;
+  height: 100vh;
   background-color: aliceblue;
   border-radius: 10px;
   display: flex;
@@ -74,6 +74,30 @@ ul li {
       background-image: url("/public/img/poke.png");
       background-repeat: no-repeat;
       background-size: cover; }
+  .timeline #fifth {
+    height: 50vh;
+    display: flex;
+    justify-content: center; }
+    .timeline #fifth #fifth-img {
+      width: 325px;
+      height: 220px;
+      margin: 10px;
+      float: right;
+      background-image: url("/public/img/poke.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .timeline #sixth {
+    height: 50vh;
+    display: flex;
+    justify-content: center; }
+    .timeline #sixth #sixth-img {
+      width: 350px;
+      height: 220px;
+      margin: 10px;
+      float: right;
+      background-image: url("/public/img/bulletin.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
 
 .parallax {
   height: 100vh;
@@ -83,14 +107,21 @@ ul li {
   background-size: cover; }
 
 #parallax-img1 {
+  background-image: url("/public/img/mizu5.jpg"); }
+
+#parallax-img2 {
   background-image: url("/public/img/mizu4.jpg"); }
+
+#parallax-img3 {
+  background-image: url("/public/img/kakeibo.png"); }
 
 .img-data {
   text-align: center;
   margin: 0 auto;
   color: cornsilk;
   font-weight: bold;
-  font-size: 30px; }
+  font-size: 30px;
+  text-shadow: 0 0 10px black; }
 
 #video {
   width: 100%;
