@@ -21,13 +21,13 @@ gulp.task('watch', () => {
 gulp.task('browser-sync', () => {
     browserSync({
         server: {
-            baseDir: "./public"   //サーバとなるrootディレクトリ
+            baseDir: "./"   //サーバとなるrootディレクトリ
         }
     });
     //ファイルの監視
     //以下のファイルが変わったらリロードする
-	gulp.watch("public/js/**/*.js",     ['reload']);
-    gulp.watch("public/*.html",         ['reload']);
+	gulp.watch("./public/js/**/*.js",     ['reload']);
+    gulp.watch("./public/*.html",         ['reload']);
 });
 
 //sassをcssに変換
@@ -37,7 +37,7 @@ gulp.task("sass", () => {
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
 		.pipe(sass())
-		.pipe(gulp.dest("/public/css"))
+		.pipe(gulp.dest("./public/css"))
         //reloadせずにinjectする
         .pipe(browserSync.stream())
 });
@@ -52,7 +52,7 @@ gulp.task("pug", () => {
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
         .pipe(pug(option))
-        .pipe(gulp.dest("/public"))
+        .pipe(gulp.dest("./public"))
 });
 
 //ブラウザリロード処理

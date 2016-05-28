@@ -14,13 +14,13 @@ body{
     display: flex;
     justify-content: center;
     .img{
-        background-image: url("/img/mypic.jpg");
+        background-image: url("/public/img/mypic.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         margin: auto;
         width: 200px;
         height: 200px;
-        border-radius: 50px;
+        //border-radius: 50px;
     }
     .content{
         margin: auto;
@@ -36,22 +36,24 @@ ul{
 .timeline{
     display: block;
     #first{
+        height: 50vh;
         display: flex;
         justify-content: center;
         #first-img{
             width: 256px;
             height: 192px;
             margin: 10px;
-            background-image: url("/img/mizu2.jpg");
+            background-image: url("/public/img/mizu2.jpg");
             background-repeat: no-repeat;
-            background-size: contain;
-            border-radius: 10px;
+            background-size: cover;
+            //border-radius: 10px;
         }
         #first-content{
             
         }
     }
     #second{
+        height: 50vh;
         display: flex;
         justify-content: center;
         #second-img{
@@ -59,16 +61,17 @@ ul{
             height: 192px;
             margin: 10px;
             float: right;
-            background-image: url("/img/mizu3.jpg");
+            background-image: url("/public/img/mizu3.jpg");
             background-repeat: no-repeat;
-            background-size: contain;
-            border-radius: 10px;
+            background-size: cover;
+            //border-radius: 10px;
         }
         #second-content{
             
         }
     }
     #third{
+        height: 50vh;
         display: flex;
         justify-content: center;
         #third-img{
@@ -76,16 +79,17 @@ ul{
             height: 192px;
             margin: 10px;
             float: right;
-            background-image: url("/img/mizu8.jpg");
+            background-image: url("/public/img/mizu8.jpg");
             background-repeat: no-repeat;
-            background-size: contain;
-            border-radius: 10px;
+            background-size: cover;
+            //border-radius: 10px;
         }
         #third-content{
             
         }
     }
     #forth{
+        height: 50vh;
         display: flex;
         justify-content: center;
         #forth-img{
@@ -93,10 +97,10 @@ ul{
             height: 220px;
             margin: 10px;
             float: right;
-            background-image: url("/img/poke.png");
+            background-image: url("/public/img/poke.png");
             background-repeat: no-repeat;
-            background-size: contain;
-            border-radius: 10px;
+            background-size: cover;
+            //border-radius: 10px;
         }
         #forth-content{
             
@@ -106,14 +110,14 @@ ul{
 }
 
 .parallax{
-    height: 400px;
+    height: 100vh;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 #parallax-img1{
-    background-image: url("/img/mizu4.jpg");
+    background-image: url("/public/img/mizu4.jpg");
 }
 .img-data{
     text-align: center;
@@ -121,4 +125,9 @@ ul{
     color: cornsilk;
     font-weight: bold;
     font-size: 30px;
+}
+
+#video{
+    width: 100%;
+    margin: auto;
 }
