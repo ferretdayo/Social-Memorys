@@ -8,22 +8,58 @@ body {
 h3 {
   margin: 0; }
 
+#sidebar {
+  padding: 0;
+  margin: 0;
+  width: 60px;
+  right: 0;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5); }
+  #sidebar ul {
+    margin: 0; }
+    #sidebar ul li {
+      margin-right: 10px;
+      text-align: center; }
+
 .box {
   width: auto;
   height: 100vh;
   background-color: aliceblue;
-  border-radius: 10px;
+  background-image: url("/public/img/yuyu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  justify-content: center; }
-  .box .img {
-    background-image: url("/public/img/mypic.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    width: 200px;
-    height: 200px; }
-  .box .content {
-    margin: auto; }
+  justify-content: center;
+  /*
+    .img{
+        background-image: url("/public/img/mypic.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        //border-radius: 50px;
+    }
+    */
+  /*.content{
+        width: 300px;
+        height: 350px;
+        background-color: white;
+        opacity: 0.5;
+        margin: auto;
+        h1{
+            color: black;
+        }
+        h2{
+            color: black;
+        }
+        ul{
+            li{
+                color: black;
+            }
+        }
+    }*/ }
 
 ul li {
   list-style: none; }
