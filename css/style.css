@@ -1,4 +1,94 @@
-h1 {
-  color: red; }
-  h1:hover {
-    color: royalblue; }
+@charset "UTF-8";
+* {
+  font-family: Helvetica, "游ゴシック"; }
+
+body {
+  margin: 0; }
+
+.box {
+  width: auto;
+  height: 400px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center; }
+  .box .img {
+    background-image: url("/img/mypic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px; }
+  .box .content {
+    margin: auto; }
+
+ul li {
+  list-style: none; }
+
+.timeline {
+  display: block; }
+  .timeline #first {
+    display: flex;
+    justify-content: center; }
+    .timeline #first #first-img {
+      width: 256px;
+      height: 192px;
+      margin: 10px;
+      background-image: url("/img/mizu2.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 10px; }
+  .timeline #second {
+    display: flex;
+    justify-content: center; }
+    .timeline #second #second-img {
+      width: 256px;
+      height: 192px;
+      margin: 10px;
+      float: right;
+      background-image: url("/img/mizu3.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 10px; }
+  .timeline #third {
+    display: flex;
+    justify-content: center; }
+    .timeline #third #third-img {
+      width: 256px;
+      height: 192px;
+      margin: 10px;
+      float: right;
+      background-image: url("/img/mizu8.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 10px; }
+  .timeline #forth {
+    display: flex;
+    justify-content: center; }
+    .timeline #forth #forth-img {
+      width: 325px;
+      height: 220px;
+      margin: 10px;
+      float: right;
+      background-image: url("/img/poke.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 10px; }
+
+.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+#parallax-img1 {
+  background-image: url("/img/mizu4.jpg"); }
+
+.img-data {
+  text-align: center;
+  margin: 0 auto;
+  color: cornsilk;
+  font-weight: bold;
+  font-size: 30px; }
