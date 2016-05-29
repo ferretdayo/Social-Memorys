@@ -4,10 +4,16 @@ html(lang='ja')
         meta(charset="utf-8")
         title タイトル
         link(href="./css/style.css", rel="stylesheet")
+        script(src="https://code.jquery.com/jquery-1.7.1.js")
+        script(src="./js/index.js")
     body
         div#sidebar
             ul
-                li 2015年
+                li: a(href="#year-2016") 2016年
+                li: a(href="#year-2015") 2015年
+                li: a(href="#year-2014") 2014年
+                li: a(href="#year-2013") 2013年
+                li: a(href="#year-2012") 2012年
         div#content
             div.box
                 div.img
@@ -23,7 +29,7 @@ html(lang='ja')
                         li ( *´艸｀)高等学校
                         li 筑波大学
             div.parallax#parallax-img1
-                div.img-data 
+                div.img-data#year-2016
                     h3 2016年
             div.timeline
                 div#first
@@ -39,7 +45,7 @@ html(lang='ja')
                         p 伏見稲荷大社に観光してアニメの聖地めぐりしました
                     div#second-img
             div.parallax#parallax-img2
-                div.img-data 
+                div.img-data#year-2015
                     h3 2015年
             div.timeline
                 div#third
@@ -55,7 +61,7 @@ html(lang='ja')
                         p ポケモンのバトルシーン作った
                     div#forth-img
             div.parallax#parallax-img3
-                div.img-data 
+                div.img-data#year-2014
                     h3 2014年
             div.timeline
                 div#fifth

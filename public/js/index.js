@@ -1,12 +1,15 @@
-$(function($) {
-		var tab = $('.timeline'),
-		offset = tab.offset();
-
-	$(window).scroll(function () {
-		if($(window).scrollTop() > offset.top) {
-			tab.addClass('fixed');
-		} else {
-			tab.removeClass('fixed');
-		}
-	});
+$(document).ready(function(){
+    $('a[href*=#]').click(function(){
+        var target = $(this.hash);
+        if(target){
+            var position = target.offset().top;
+            console.log(position);
+            $('body,html').animate({    
+                scrollTop: position
+            }, {
+                queue: false
+            });
+            return false;
+        }
+    });
 });
