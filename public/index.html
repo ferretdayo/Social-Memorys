@@ -2,108 +2,40 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>タイトル</title>
-    <link href="./css/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.7.1.js"></script>
-    <script src="./js/index.js"></script>
+    <title>Socia Memory s</title>
+    <link href="/public/css/index.css" rel="stylesheet">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/public/js/login.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div id="sidebar">
-      <ul>
-        <li><a href="#year-2016">2016年</a></li>
-        <li><a href="#year-2015">2015年</a></li>
-        <li><a href="#year-2014">2014年</a></li>
-        <li><a href="#year-2013">2013年</a></li>
-        <li><a href="#year-2012">2012年</a></li>
-      </ul>
+    <div id="social">Social Memory s</div>
+    <div class="container">
+      <input class="btn btn-primary" id="loginButton" type="button" data-toggle="modal" data-target="#myModal" value="Enter">
     </div>
-    <div id="content">
-      <div class="box">
-        <div class="img"></div>
-        <!--div.content
-        h1 鶴田　智大
-        ul
-            li 平成6年7月7日~平成28年5月28日
-            li 出身地：広島県
-        h2 経歴
-        ul
-            li ('ω')ノ小学校
-            li (*´ω｀*)中学校
-            li ( *´艸｀)高等学校
-            li 筑波大学
-        -->
-      </div>
-      <div class="parallax" id="parallax-img1">
-        <div class="img-data" id="year-2016">
-          <h3>2016年</h3>
-        </div>
-      </div>
-      <div class="timeline">
-        <div id="first">
-          <div id="first-img"></div>
-          <div id="first-content">
-            <h3>河原町</h3>
-            <h4>2016年11月</h4>
-            <p>ミズゴロウとみんなで京都の鴨川行きましたよー</p>
+    <!--ログインのためのモーダルウィンドウ表示-->
+    <div class="modal fade" id="myModal"> 
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"></div>
+          <div class="modal-body"><p>ログイン画面                             
+            <div class="form-group">                                 
+              <input class="form-control" type="text" placeholder="ユーザーID" aria-describedby="sizing-addon2">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="パスワード" aria-describedby="sizing-addon2">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="form-group">
+              <input class="btn btn-primary pull-right" type="button" value="ログイン" onClick="login()">
+            </div>
+            <input class="btn btn-primary center-block" type="button" value="ゲストとしてログイン" onClick="guest()">
           </div>
         </div>
-        <div id="second">
-          <div id="second-content">
-            <h3>伏見稲荷大社</h3>
-            <h4>2016年9月</h4>
-            <p>伏見稲荷大社に観光してアニメの聖地めぐりしました</p>
-          </div>
-          <div id="second-img"></div>
-        </div>
       </div>
-      <div class="parallax" id="parallax-img2">
-        <div class="img-data" id="year-2015">
-          <h3>2015年</h3>
-        </div>
-      </div>
-      <div class="timeline">
-        <div id="third">
-          <div id="third-img"></div>
-          <div id="third-content">
-            <h3>雪遊び</h3>
-            <h4>2015年1月</h4>
-            <p>ミズゴロウと雪遊びしてた</p>
-          </div>
-        </div>
-        <div id="forth">
-          <div id="forth-content">
-            <h3>大学の課題</h3>
-            <h4>2015年10月</h4>
-            <p>ポケモンのバトルシーン作った</p>
-          </div>
-          <div id="forth-img"></div>
-        </div>
-      </div>
-      <div class="parallax" id="parallax-img3">
-        <div class="img-data" id="year-2014">
-          <h3>2014年</h3>
-        </div>
-      </div>
-      <div class="timeline">
-        <div id="fifth">
-          <div id="fifth-img"></div>
-          <div id="fifth-content">
-            <h3>初海外初インターン</h3>
-            <h4>2014年7月</h4>
-            <p>カレーウマウマ</p>
-          </div>
-        </div>
-        <div id="sixth">
-          <div id="sixth-content">
-            <h3>掲示板開発</h3>
-            <h4>2014年9月</h4>
-            <p>SQLむずかった・・・</p>
-          </div>
-          <div id="sixth-img"></div>
-        </div>
-      </div>
-      <video id="video" src="./img/tonbo.mp4" autoplay loop></video>
     </div>
-    <div id="footer"></div>
   </body>
 </html>

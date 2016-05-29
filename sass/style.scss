@@ -9,6 +9,7 @@ h3{
     margin: 0;
 }
 
+//サイドナビゲーション
 #sidebar{
     padding: 0;
     margin: 0;
@@ -30,46 +31,17 @@ h3{
     }
 }
 
+//ユーザの最初の画面
 .box{
     width: auto;
     height: 100vh;
     background-color: aliceblue;
-    //border-radius: 10px;
     background-image: url("/public/img/yuyu.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
     display: flex;
     justify-content: center;
-    /*
-    .img{
-        background-image: url("/public/img/mypic.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: auto;
-        width: 200px;
-        height: 200px;
-        //border-radius: 50px;
-    }
-    */
-    /*.content{
-        width: 300px;
-        height: 350px;
-        background-color: white;
-        opacity: 0.5;
-        margin: auto;
-        h1{
-            color: black;
-        }
-        h2{
-            color: black;
-        }
-        ul{
-            li{
-                color: black;
-            }
-        }
-    }*/
 }
 
 ul{
@@ -78,6 +50,7 @@ ul{
     }
 }
 
+//タイムライン内容
 .timeline{
     display: block;
     #first{
@@ -160,7 +133,7 @@ ul{
             height: 220px;
             margin: 10px;
             float: right;
-            background-image: url("/public/img/poke.png");
+            background-image: url("/public/img/india.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             //border-radius: 10px;
@@ -190,6 +163,8 @@ ul{
     
 }
 
+//パララックスサイトのための設定
+//attachment: fixedで実現
 .parallax{
     height: 100vh;
     background-position: 50% 50%;
@@ -197,6 +172,8 @@ ul{
     background-attachment: fixed;
     background-size: cover;
 }
+
+//パララックス用の画像
 #parallax-img1{
     background-image: url("/public/img/mizu5.jpg");
 }
@@ -206,6 +183,7 @@ ul{
 #parallax-img3{
     background-image: url("/public/img/mizu6.jpg");
 }
+//パララックス用の画像に表示する文字に関する設定
 .img-data{
     text-align: center;
     margin: 0 auto;

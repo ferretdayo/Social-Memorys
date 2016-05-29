@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+//Header
+#head{
+    margin: 0;
+    height: 300px;
+    width: 100%;
+    background-image: url("/public/img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    div{
+        position: relative;
+        top: 40%;
+        color: white;
+        font-weight: bold;
+        font-size: 40px;  
+        text-align: center;
+        text-shadow: 0 0 10px black;
+    }
+}
+
+//Body
+#content{
+    .col{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//UserName
+.name{
+    text-align: center;
+    font-size: 16px;
+}
+
+//UserImage
+a{
+    margin: 30px 30px;
+    text-decoration: none;
+}
+
+//ユーザの画像
+//実際にプログラムで自動的に画像を入れるならば、CSSで背景を設定するのはやめるべき
+#img0{
+    width: 100px;
+    height: 100px;
+    background-image: url("/public/img/mygirl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img1{
+    width: 100px;
+    height: 100px;
+    background-image: url("/public/img/mypic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img2{
+    width: 100px;
+    height: 100px;
+    background-image: url("/public/img/myman.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

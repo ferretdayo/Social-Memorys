@@ -2,79 +2,34 @@ doctype html
 html(lang='ja')
     head
         meta(charset="utf-8")
-        title タイトル
-        link(href="./css/style.css", rel="stylesheet")
-        script(src="https://code.jquery.com/jquery-1.7.1.js")
-        script(src="./js/index.js")
+        title Socia Memory s
+        link(href="/public/css/index.css", rel="stylesheet")
+        //bootstrap
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css")
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+        script(src="/public/js/login.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js")
+
+
     body
-        div#sidebar
-            ul
-                li: a(href="#year-2016") 2016年
-                li: a(href="#year-2015") 2015年
-                li: a(href="#year-2014") 2014年
-                li: a(href="#year-2013") 2013年
-                li: a(href="#year-2012") 2012年
-        div#content
-            div.box
-                div.img
-                //div.content
-                    h1 鶴田　智大
-                    ul
-                        li 平成6年7月7日~平成28年5月28日
-                        li 出身地：広島県
-                    h2 経歴
-                    ul
-                        li ('ω')ノ小学校
-                        li (*´ω｀*)中学校
-                        li ( *´艸｀)高等学校
-                        li 筑波大学
-            div.parallax#parallax-img1
-                div.img-data#year-2016
-                    h3 2016年
-            div.timeline
-                div#first
-                    div#first-img
-                    div#first-content
-                        h3 河原町
-                        h4 2016年11月
-                        p ミズゴロウとみんなで京都の鴨川行きましたよー
-                div#second
-                    div#second-content
-                        h3 伏見稲荷大社
-                        h4 2016年9月
-                        p 伏見稲荷大社に観光してアニメの聖地めぐりしました
-                    div#second-img
-            div.parallax#parallax-img2
-                div.img-data#year-2015
-                    h3 2015年
-            div.timeline
-                div#third
-                    div#third-img
-                    div#third-content
-                        h3 雪遊び
-                        h4 2015年1月
-                        p ミズゴロウと雪遊びしてた
-                div#forth
-                    div#forth-content
-                        h3 大学の課題
-                        h4 2015年10月
-                        p ポケモンのバトルシーン作った
-                    div#forth-img
-            div.parallax#parallax-img3
-                div.img-data#year-2014
-                    h3 2014年
-            div.timeline
-                div#fifth
-                    div#fifth-img
-                    div#fifth-content
-                        h3 初海外初インターン
-                        h4 2014年7月
-                        p カレーウマウマ
-                div#sixth
-                    div#sixth-content
-                        h3 掲示板開発
-                        h4 2014年9月
-                        p SQLむずかった・・・
-                    div#sixth-img
-            video#video(src="./img/tonbo.mp4" autoplay loop)
-        div#footer
+        div#social Social Memory s
+        div.container
+            input#loginButton(type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Enter")
+        //ログインのためのモーダルウィンドウ表示
+        div(class="modal fade" id="myModal") 
+            div(class="modal-dialog")
+                div(class="modal-content")
+                    div(class="modal-header")
+                    div(class="modal-body")
+                        <p>ログイン画面                             
+                        div(class="form-group")                                  
+                            input(type="text" class="form-control" placeholder="ユーザーID" aria-describedby="sizing-addon2")                    
+                        div(class="form-group")
+                            input(type="text" class="form-control" placeholder="パスワード" aria-describedby="sizing-addon2")
+
+                    div(class="modal-footer")
+                        div(class="form-group")
+                            input(type="button" value="ログイン"  class="btn btn-primary pull-right" onClick="login()")
+                        
+                        input(type="button" value="ゲストとしてログイン"  class="btn btn-primary center-block" onClick="guest()")
