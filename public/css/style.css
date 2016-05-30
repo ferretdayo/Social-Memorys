@@ -29,7 +29,7 @@ h3 {
   width: auto;
   height: 100vh;
   background-color: aliceblue;
-  background-image: url("/public/img/yuyu.jpg");
+  background-image: url("/public/img/mizu2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -96,7 +96,7 @@ ul li {
       height: 220px;
       margin: 10px;
       float: right;
-      background-image: url("/public/img/india.jpg");
+      background-image: url("/public/img/chat.png");
       background-repeat: no-repeat;
       background-size: cover; }
   .timeline #sixth {
